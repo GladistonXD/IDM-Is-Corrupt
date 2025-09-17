@@ -1,0 +1,75 @@
+# IDM-Is-Corrupt
+# 📦 Generate Executable (.exe) from PowerShell Script
+
+This guide explains how to convert a PowerShell script (`.ps1`) into an
+executable (`.exe`) using the **ps2exe** module.\
+This allows you to distribute your program without requiring the user to
+open PowerShell directly.
+
+------------------------------------------------------------------------
+
+## 🔧 1. Configure PowerShell to allow scripts
+
+By default, Windows blocks script execution.\
+To enable it, run the following in PowerShell:
+
+``` powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
+```
+
+This only applies to the **current user**, without affecting the whole
+system.
+
+------------------------------------------------------------------------
+
+## 📥 2. Install the `ps2exe` module
+
+Still in PowerShell, execute:
+
+``` powershell
+Install-Module -Name ps2exe -Scope CurrentUser -Force
+```
+
+If a message about an untrusted repository appears, type **A** (Yes to
+All).
+
+------------------------------------------------------------------------
+
+## 📂 3. File structure
+
+Place the files in a folder, for example:
+
+    📁 Project
+     ├── idmiscorrput.ps1        # Your PowerShell script
+     ├── icon.ico          # Icon for the executable
+
+------------------------------------------------------------------------
+
+## ⚙️ 4. Generate the executable
+
+In PowerShell, navigate to the project folder:
+
+``` powershell
+cd "C:\Users\YourUser\Desktop\Project"
+```
+
+Then run:
+
+``` powershell
+ps2exe .\idmiscorrput.ps1 .\idmiscorrput.exe -noConsole -noOutput -icon "icon.ico"
+```
+
+### Parameter explanation:
+
+-   `idmiscorrput.ps1` → your input script.\
+-   `idmiscorrput.exe` → name of the output executable.\
+-   `-noConsole` → hides the PowerShell window.\
+-   `-noOutput` → suppresses logs.\
+-   `-icon "icon.ico"` → sets the executable's icon.
+
+------------------------------------------------------------------------
+
+## ✅ 5. Running
+
+Now just run the generated `.exe`.\
+The .exe will run in the background, only visible in the task manager, I recommend putting it in the Windows startupl.
