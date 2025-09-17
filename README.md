@@ -49,10 +49,6 @@ Place the files in a folder, for example:
 
 In PowerShell, navigate to the project folder:
 
-``` powershell
-cd "C:\Users\YourUser\Desktop\Project"
-```
-
 Then run:
 
 ``` powershell
@@ -71,6 +67,9 @@ ps2exe .\idmiscorrupt.ps1 .\idmiscorrupt.exe -noConsole -noOutput -icon "icon.ic
 
 ## ✅ 5. Running
 
-Now just run the generated `.exe`.\
-The .exe will run in the background, only visible in the task manager, I recommend putting it in the Windows startup.
+Now just run the generated `.exe`
+## Because it is an unsigned executable, Windows may recognize it as a virus after compilation. You can whitelist it in Windows Defender by restoring the application.
+
+The `.exe` will run in the background, only visible in the task manager, I recommend putting it in the Windows startup.
+
 `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`
