@@ -73,3 +73,4 @@ ps2exe .\idmiscorrupt.ps1 .\idmiscorrupt.exe -noConsole -noOutput -icon "icon.ic
 
 Now just run the generated `.exe`.\
 The .exe will run in the background, only visible in the task manager, I recommend putting it in the Windows startup.
+`%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`
