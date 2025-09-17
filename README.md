@@ -40,7 +40,7 @@ All).
 Place the files in a folder, for example:
 
     📁 Project
-     ├── idmiscorrput.ps1        # Your PowerShell script
+     ├── idmiscorrupt.ps1        # Your PowerShell script
      ├── icon.ico          # Icon for the executable
 
 ------------------------------------------------------------------------
@@ -56,13 +56,13 @@ cd "C:\Users\YourUser\Desktop\Project"
 Then run:
 
 ``` powershell
-ps2exe .\idmiscorrput.ps1 .\idmiscorrput.exe -noConsole -noOutput -icon "icon.ico"
+ps2exe .\idmiscorrupt.ps1 .\idmiscorrupt.exe -noConsole -noOutput -icon "icon.ico"
 ```
 
 ### Parameter explanation:
 
--   `idmiscorrput.ps1` → your input script.\
--   `idmiscorrput.exe` → name of the output executable.\
+-   `idmiscorrupt.ps1` → your input script.\
+-   `idmiscorrupt.exe` → name of the output executable.\
 -   `-noConsole` → hides the PowerShell window.\
 -   `-noOutput` → suppresses logs.\
 -   `-icon "icon.ico"` → sets the executable's icon.
