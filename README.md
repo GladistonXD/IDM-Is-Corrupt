@@ -1,5 +1,5 @@
 # IDM-Is-Corrupt
-# 📦 Generate Executable (.exe) from PowerShell Script
+# 📦 This executable eliminates the "IDM is corrupt" window
 
 This guide explains how to convert a PowerShell script (`.ps1`) into an
 executable (`.exe`) using the **ps2exe** module.\
