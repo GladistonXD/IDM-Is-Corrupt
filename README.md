@@ -41,7 +41,7 @@ Place the files in a folder, for example:
 
     📁 Project
      ├── idmiscorrupt.ps1        # Your PowerShell script
-     ├── icon.ico          # Icon for the executable
+     ├── icon.ico                # Icon for the executable
 
 ------------------------------------------------------------------------
 
@@ -57,10 +57,10 @@ ps2exe .\idmiscorrupt.ps1 .\idmiscorrupt.exe -noConsole -noOutput -icon "icon.ic
 
 ### Parameter explanation:
 
--   `idmiscorrupt.ps1` → your input script.\
--   `idmiscorrupt.exe` → name of the output executable.\
--   `-noConsole` → hides the PowerShell window.\
--   `-noOutput` → suppresses logs.\
+-   `idmiscorrupt.ps1` → your input script.
+-   `idmiscorrupt.exe` → name of the output executable.
+-   `-noConsole` → hides the PowerShell window.
+-   `-noOutput` → suppresses logs.
 -   `-icon "icon.ico"` → sets the executable's icon.
 
 ------------------------------------------------------------------------
