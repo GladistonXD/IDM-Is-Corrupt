@@ -13,7 +13,7 @@ open PowerShell directly.
 
 2. Retrieves the Thread ID responsible for that window.
 
-3. Uses native Windows APIs (`user32.dll` and `kernel32.dll`) to open and forcibly terminate the thread.
+3. Uses native Windows APIs (`user32.dll` and `kernel32.dll`) to forcibly terminate the thread.
 
 ------------------------------------------------------------------------
 ## 🔧 1. Configure PowerShell to allow scripts
