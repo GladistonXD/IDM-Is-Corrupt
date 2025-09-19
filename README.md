@@ -7,7 +7,15 @@ This allows you to distribute your program without requiring the user to
 open PowerShell directly.
 
 ------------------------------------------------------------------------
+## What it does (brief, step-by-step)
 
+1. Finds the window handle by the window title.
+
+2. Retrieves the Thread ID responsible for that window.
+
+3. Uses native Windows APIs (`user32.dll` and `kernel32.dll`) to open and forcibly terminate the thread.
+
+------------------------------------------------------------------------
 ## 🔧 1. Configure PowerShell to allow scripts
 
 By default, Windows blocks script execution.\
